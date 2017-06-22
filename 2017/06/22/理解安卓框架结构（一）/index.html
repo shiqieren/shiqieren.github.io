@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="理解安卓运行是环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（j">
+<meta name="description" content="安卓运行环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（just">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1">
 <meta property="og:url" content="https://shiqieren.github.io/2017/06/22/理解安卓框架结构（一）/index.html">
 <meta property="og:site_name" content="十且人的个人博客">
-<meta property="og:description" content="理解安卓运行是环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（j">
+<meta property="og:description" content="安卓运行环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（just">
 <meta property="og:image" content="http://orh2enexl.bkt.clouddn.com/%E5%A0%86%E6%A0%88%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8%E6%8C%87%E4%BB%A4%E9%9B%86%E5%8C%BA%E5%88%AB.png">
 <meta property="og:image" content="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%9E%B6%E6%9E%84.png">
-<meta property="og:updated_time" content="2017-06-22T15:34:26.000Z">
+<meta property="og:updated_time" content="2017-06-22T15:39:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1">
-<meta name="twitter:description" content="理解安卓运行是环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（j">
+<meta name="twitter:description" content="安卓运行环境 什么是Dalvik： Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。  什么是ART： 在Dalvik下，应用==每次运行==的时候，字节码都需要通过即时编译器（just">
 <meta name="twitter:image" content="http://orh2enexl.bkt.clouddn.com/%E5%A0%86%E6%A0%88%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8%E6%8C%87%E4%BB%A4%E9%9B%86%E5%8C%BA%E5%88%AB.png">
 
 
@@ -322,7 +322,7 @@
       
 
       
-        <h1 id="理解安卓运行是环境"><a href="#理解安卓运行是环境" class="headerlink" title="理解安卓运行是环境"></a>理解安卓运行是环境</h1><hr>
+        <h1 id="安卓运行环境"><a href="#安卓运行环境" class="headerlink" title="安卓运行环境"></a>安卓运行环境</h1><hr>
 <h5 id="什么是Dalvik："><a href="#什么是Dalvik：" class="headerlink" title="什么是Dalvik："></a>什么是Dalvik：</h5><blockquote>
 <p>Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。</p>
 </blockquote>
@@ -493,7 +493,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#理解安卓运行是环境"><span class="nav-number">1.</span> <span class="nav-text">理解安卓运行是环境</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#什么是Dalvik："><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">什么是Dalvik：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#什么是ART："><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">什么是ART：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dalvik（5-0以后ART）和JVM区别"><span class="nav-number">1.1.</span> <span class="nav-text">Dalvik（5.0以后ART）和JVM区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要区别："><span class="nav-number">1.1.1.</span> <span class="nav-text">主要区别：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#二者区别如下图："><span class="nav-number">1.1.1.0.0.1.</span> <span class="nav-text">二者区别如下图：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安卓系统架构图"><span class="nav-number">1.1.2.</span> <span class="nav-text">　安卓系统架构图</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安卓运行环境"><span class="nav-number">1.</span> <span class="nav-text">安卓运行环境</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#什么是Dalvik："><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">什么是Dalvik：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#什么是ART："><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">什么是ART：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dalvik（5-0以后ART）和JVM区别"><span class="nav-number">1.1.</span> <span class="nav-text">Dalvik（5.0以后ART）和JVM区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要区别："><span class="nav-number">1.1.1.</span> <span class="nav-text">主要区别：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#二者区别如下图："><span class="nav-number">1.1.1.0.0.1.</span> <span class="nav-text">二者区别如下图：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安卓系统架构图"><span class="nav-number">1.1.2.</span> <span class="nav-text">　安卓系统架构图</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
