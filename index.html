@@ -441,7 +441,18 @@
       
         
           
-            <h1 id="安卓运行环境"><a href="#安卓运行环境" class="headerlink" title="安卓运行环境"></a>安卓运行环境</h1><hr>
+            <h3 id="安卓系统架构图"><a href="#安卓系统架构图" class="headerlink" title="　安卓系统架构图"></a>　安卓系统架构图</h3><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%9E%B6%E6%9E%84.png" alt="image"></p>
+<p>简易的一条请求，走过那些层级<br><img src="http://orh2enexl.bkt.clouddn.com/%E5%91%BD%E4%BB%A4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%B1%82.png" alt="image"></p>
+<h2 id="支撑起安卓3大-驱动-基石"><a href="#支撑起安卓3大-驱动-基石" class="headerlink" title="支撑起安卓3大==驱动====基石=="></a>支撑起安卓3大==驱动====基石==</h2><p>Loger（日志），Binder（IPC通信），Ashmem（匿名共享内存）</p>
+<h3 id="一图简易说明驱动原理与裁剪"><a href="#一图简易说明驱动原理与裁剪" class="headerlink" title="一图简易说明驱动原理与裁剪"></a>一图简易说明驱动原理与裁剪</h3><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%93%8D%E4%BD%9C%E5%BA%95%E5%B1%82%E9%A9%B1%E5%8A%A8%E5%8E%9F%E7%90%86.png" alt="image"></p>
+<p>安卓开发源码查看三大入手点</p>
+<ol>
+<li>HAL：硬件抽象层，底层交互</li>
+<li>Applicaticon componnet：四大组件，对应的进程，消息循环，安装</li>
+<li>UI:渲染流程图(4.2版本)</li>
+</ol>
+<p><img src="http://orh2enexl.bkt.clouddn.com/UI%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="image"></p>
+<h1 id="安卓运行环境"><a href="#安卓运行环境" class="headerlink" title="安卓运行环境"></a>安卓运行环境</h1><hr>
 <h5 id="什么是Dalvik："><a href="#什么是Dalvik：" class="headerlink" title="什么是Dalvik："></a>什么是Dalvik：</h5><blockquote>
 <p>Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。</p>
 </blockquote>
@@ -456,7 +467,6 @@
 <p>==++3. 自Android 2.2开始，Dalvik支持JIT（just-in-time，即时编译技术）。++==</p>
 <p>运行环境执行过程　</p>
 <p>　当Android启动时，Dalvik VM 监视所有的程序（APK），并且创建依存关系树，为每个程序优化代码并存储在Dalvik缓存中。Dalvik第一次加载后会生成Cache文件，以提供下次快速加载，所以第一次会很慢。</p>
-<h3 id="安卓系统架构图"><a href="#安卓系统架构图" class="headerlink" title="　安卓系统架构图"></a>　安卓系统架构图</h3><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%9E%B6%E6%9E%84.png" alt="image"></p>
 
           
         
