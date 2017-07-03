@@ -253,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/07/02/WebView的Chromium(七)/">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/IPC原理与安卓中的Binder（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="shiqieren">
@@ -272,7 +272,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/02/WebView的Chromium(七)/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2017/06/25/IPC原理与安卓中的Binder（二）/" itemprop="url">IPC原理与安卓中的Binder（二）</a></h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,589 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-02T14:57:36+08:00">
-                2017-07-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="IPC种类"><a href="#IPC种类" class="headerlink" title="IPC种类"></a>IPC种类</h1><p><img src="http://orh2enexl.bkt.clouddn.com/IPC%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1.png" alt="image"></p>
+<h1 id="关于IBinder接口使用场合分析"><a href="#关于IBinder接口使用场合分析" class="headerlink" title="关于IBinder接口使用场合分析"></a>关于IBinder接口使用场合分析</h1><table>
+<thead>
+<tr>
+<th>自定义</th>
+<th>标准化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Binder</td>
+<td>AIDL</td>
+</tr>
+<tr>
+<td>单线程同一个应用内</td>
+<td>多线程多个同时访问跨应用</td>
+</tr>
+</tbody>
+</table>
+<p>通Messenger队列实现单线程多访问</p>
+<hr>
+<p>安卓中Binder的实现过程<br><img src="http://orh2enexl.bkt.clouddn.com/%E5%85%B3%E4%BA%8Ebinder%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/窗口渲染（三）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/25/窗口渲染（三）/" itemprop="url">窗口渲染（三）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E7%AA%97%E5%8F%A3%E6%B8%B2%E6%9F%93.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/UI渲染（四）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/25/UI渲染（四）/" itemprop="url">UI渲染（四）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://orh2enexl.bkt.clouddn.com/UI%E6%B8%B2%E6%9F%93%E7%9A%84%E8%BF%87%E7%A8%8B.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/资源管理器（五）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/25/资源管理器（五）/" itemprop="url">资源管理器（五）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://orh2enexl.bkt.clouddn.com/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/Dalivk(六)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/25/Dalivk(六)/" itemprop="url">Dalivk(六)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://orh2enexl.bkt.clouddn.com/Dalvik.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/WebView的Chromium(七)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/25/WebView的Chromium(七)/" itemprop="url">WebView的Chromium(七)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
+                2017-06-25
               </time>
             
 
@@ -435,7 +1016,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/30/Dalivk(六)/">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/webkit和chromium，实际与经验（八）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="shiqieren">
@@ -454,455 +1035,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/30/Dalivk(六)/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-30T15:53:19+08:00">
-                2017-06-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://orh2enexl.bkt.clouddn.com/Dalvik.png" alt="image"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/30/资源管理器（五）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/30/资源管理器（五）/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-30T15:52:35+08:00">
-                2017-06-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://orh2enexl.bkt.clouddn.com/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="image"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/28/UI渲染（四）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/28/UI渲染（四）/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-28T18:50:23+08:00">
-                2017-06-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://orh2enexl.bkt.clouddn.com/UI%E6%B8%B2%E6%9F%93%E7%9A%84%E8%BF%87%E7%A8%8B.png" alt="image"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/27/窗口渲染（三）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/27/窗口渲染（三）/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-27T22:23:20+08:00">
-                2017-06-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E7%AA%97%E5%8F%A3%E6%B8%B2%E6%9F%93.png" alt="image"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/IPC原理与安卓中的Binder（二）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/25/IPC原理与安卓中的Binder（二）/" itemprop="url">1</a></h1>
+                <a class="post-title-link" href="/2017/06/25/webkit和chromium，实际与经验（八）/" itemprop="url">webkit和chromium，实际与经验（八）</a></h1>
         
 
         <div class="post-meta">
@@ -951,28 +1084,135 @@ Chromium的线程消息发送可以通过以下三种接口实现:
       
         
           
-            <h1 id="IPC种类"><a href="#IPC种类" class="headerlink" title="IPC种类"></a>IPC种类</h1><p><img src="http://orh2enexl.bkt.clouddn.com/IPC%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1.png" alt="image"></p>
-<h1 id="关于IBinder接口使用场合分析"><a href="#关于IBinder接口使用场合分析" class="headerlink" title="关于IBinder接口使用场合分析"></a>关于IBinder接口使用场合分析</h1><table>
-<thead>
-<tr>
-<th>自定义</th>
-<th>标准化</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Binder</td>
-<td>AIDL</td>
-</tr>
-<tr>
-<td>单线程同一个应用内</td>
-<td>多线程多个同时访问跨应用</td>
-</tr>
-</tbody>
-</table>
-<p>通Messenger队列实现单线程多访问</p>
-<hr>
-<p>安卓中Binder的实现过程<br><img src="http://orh2enexl.bkt.clouddn.com/%E5%85%B3%E4%BA%8Ebinder%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B.png" alt="image"></p>
+            <p>webkit（渲染引擎）——基于webkit的Chromium（开源浏览器，WebGL，Canvas2D，CSS3以及其他很多的HTML5特性）——基于chromium的chrome浏览器</p>
+<h1 id="WebKit"><a href="#WebKit" class="headerlink" title="WebKit:"></a>WebKit:</h1><ol>
+<li>HTML解析:：负责HTML语言的解析</li>
+<li>CSS解析：负责CSS的解析工作</li>
+<li>图片解码：支持不同编码格式的图片</li>
+<li>JavaScript引擎：javascript语言的解析引擎，缺省的是JavaScriptCore，但是目前Google 的V8 JavaScript被广泛使用</li>
+<li>正则表达式</li>
+<li>布局：负责布局(layout)的计算和更新工作</li>
+<li>文档对象模型(DOM)：DOM是W3C定义的对象模型，该部分负责DOM树及其相应的接口</li>
+<li>渲染：与渲染相关的基础设施，例如渲染树，渲染层次树等等</li>
+<li>SVG：对SVG的支持</li>
+<li>XML解析：XML语言的解析</li>
+<li>XSLT：XSLT语言的解析执行</li>
+<li>URL解析器：URL规范的解析</li>
+<li>Unicode编解码器：各种编码解码工作</li>
+<li>移植：WebKit中比较大的一部分，因为WebKit要工作需要不同平台上有具体的实现，因而不同的移植有不同的实现。chromium的移植很复杂，因为其支持跨平台，所以它的移植需要在windows，Linux和mac上工作。<br>由上面的模块大致可以WebKit主要是跟网页的解析和渲染相关的工作，其不涉及浏览器的历史，书签，下载，cookie管理等等方面的工作。<br><img src="http://my.csdn.net/uploads/201204/19/1334843108_7434.png" alt="image"><h1 id="Chromium"><a href="#Chromium" class="headerlink" title="Chromium:"></a>Chromium:</h1></li>
+<li>Cookie管理器：cookie生命周期的管理</li>
+<li>历史管理器：历史记录的管理</li>
+<li>密码管理器：网页中密码登录信息管理</li>
+<li>窗口管理：多个Tab窗口的管理和切换</li>
+<li>地址栏：地址栏功能，智能地址填充与书签的协同工作</li>
+<li>安全浏览黑名单管理：安全浏览机制</li>
+<li>网络栈：与网络传输相关的工作，其有很多创新的东西</li>
+<li>SSL/TLS：网络传输安全</li>
+<li>磁盘缓存：磁盘缓存页面及其替换策略等生命周期的管理</li>
+<li>下载管理器：管理下载相关</li>
+<li>粘帖板：clipboard的功能<br>12.书签管理：书签的组织和管理</li>
+<li>URL解析器：同WebKit</li>
+<li>Unicode编解码器：同WebKit<br>Chromium主要是实现浏览器相关的功能，如上面中的网络栈等等。其实以上只是一些浏览器基本功能，chromium实现的远不止这些，这其中包含沙箱模型，NaCl，扩展机制，硬件加速架构等等。这些我们将在之后的章节中逐一介绍它们。<br>URL解析器和Unicode编解码器在两者中都存在是因为它们都要使用到。<br><img src="http://my.csdn.net/uploads/201204/19/1334843117_8732.png" alt="image"><h3 id="Canvas-2D"><a href="#Canvas-2D" class="headerlink" title="Canvas 2D"></a>Canvas 2D</h3><img src="http://hi.csdn.net/attachment/201202/25/0_1330139738nsdB.gif" alt="image"><br>Canvas本身来讲并没有定义绘制图形的动作和行为，只是提供了一个获取绘图的上下文（context），从而使用相应绘制的==API接口==</li>
+</ol>
+<p>第一部分，如下两个函数save和restore用来保存或者恢复2D上下文的状态；</p>
+<ul>
+<li>void save();</li>
+<li>void restore();</li>
+</ul>
+<p>第二部分，用来设置变换参数，例如缩放，旋转，平移等，这些构成了一个变换矩阵，缺省是Identity矩阵；</p>
+<ul>
+<li>void scale</li>
+<li>void rotate</li>
+<li>void translate</li>
+<li>void tranform</li>
+<li>void setTransform</li>
+</ul>
+<p>第三部分，对象的两个属性globalAlpha和globalCompositeOperation，用来设置alpha值和合成模式,合成模式有多种，例如source-over, source-in, source-out, destination-over,destination-in, destination-in等等</p>
+<ul>
+<li>attribute double globalAlpha;(default 1.0)</li>
+<li>attribute DOMString globalCompositeOperation；(default source-over)</li>
+</ul>
+<p>第四部分，有关设置颜色和样式，包括两个属性strokeStyle, fillStyle，gradient, pattern, 用来表示笔画和填充的格式，变化率，和用来填充图片的模式</p>
+<p>第五部分，有关线的样式属性，它们包括线宽度，线端样式及其线与线的连接方式等；</p>
+<p>第六部分，有关阴影方面的属性，这是全局的，影响所有绘制的图形；</p>
+<p>第七部分，绘制矩形的相关操作，包括清除矩形区域，填充和绘制矩形边框；</p>
+<p>第八部分，Path相关的操作，用来绘制自定义的路径的图形，这可以是图形可以是直线，弧形，曲线等；</p>
+<p>第九部分，与文字相关的操作，包括字体，文字对齐方式等属性和绘制文字等操作；</p>
+<p>第十部分，绘制图像到画布上，图像来源可以Image元素，Canvas元素，或者是Video元素。通过设置的样式，可以把待绘制的图像以不同的方式绘制到目标的Canvas上；</p>
+<p>第十一部分，有关像素方面的操作，包括ImageData创建，以及从canvas读取内容创建ImageData和把ImageData内容写到canvas；</p>
+<p>第十二部分，定义与上面一些API相关的类（接口），例如CanvasGradient，CanvasPattern等，这些类街头连同上面的API都被定义WebIDL格式</p>
+<h3 id="Canvas3D或者称为WebGL"><a href="#Canvas3D或者称为WebGL" class="headerlink" title="Canvas3D或者称为WebGL"></a>Canvas3D或者称为WebGL</h3><p>API源于OpenGL ES2.0，提供了相似的3D绘图功能<br><img src="http://hi.csdn.net/attachment/201202/25/0_1330140378HOFk.gif" alt="image"></p>
+<h3 id="软件渲染基础（传统的网页）"><a href="#软件渲染基础（传统的网页）" class="headerlink" title="软件渲染基础（传统的网页）"></a>软件渲染基础（传统的网页）</h3><h5 id="非硬件渲染的内容（包括但不限于CSS3-3D-transformation，-css3-3D-transition，-Canvas-2D，-WebGL和Video）"><a href="#非硬件渲染的内容（包括但不限于CSS3-3D-transformation，-css3-3D-transition，-Canvas-2D，-WebGL和Video）" class="headerlink" title="非硬件渲染的内容（包括但不限于CSS3 3D transformation， css3 3D transition， Canvas 2D， WebGL和Video）"></a>非硬件渲染的内容（包括但不限于CSS3 3D transformation， css3 3D transition， Canvas 2D， WebGL和Video）</h5><h2 id="同硬件加速渲染的对比"><a href="#同硬件加速渲染的对比" class="headerlink" title="同硬件加速渲染的对比"></a>同硬件加速渲染的对比</h2><p>第一，  共享内存是很宝贵的资源。</p>
+<p>第二，  重新绘制网页内容的需要。（不需像硬件渲染可能要重新绘制重新合成）</p>
+<h5 id="软件渲染是有其优势所在"><a href="#软件渲染是有其优势所在" class="headerlink" title="软件渲染是有其优势所在"></a>软件渲染是有其优势所在</h5><p>第一，  很多场景适合用软件渲染，而且速度更快。一般的网页，用软件渲染速度更快，用了硬件加速这个“牛刀”可能会造成较大地额外负载，一般网页的文字和图片对现代CPU来说不是什么大问题，处理起来那是相当地快。</p>
+<p>第二，  相比较硬件加速渲染，它不需要GPU内存和其他资源。硬件加速渲染需要很多的GPU内存资源，因为它会每个层分配内存对象，很多时候GPU资源很紧张。</p>
+<h6 id="渲染显示层次结构图"><a href="#渲染显示层次结构图" class="headerlink" title="渲染显示层次结构图"></a>渲染显示层次结构图</h6><p><img src="http://my.csdn.net/uploads/201204/12/1334233801_2691.png" alt="image"></p>
+<p>RendererHost及其以下部分称为Content，同时包括还有很多对HTML5功能实现的支持，contentAPI基于此两部分，包装成为一套公开的接口。Tab contents及以上部分称为Chrome（chrome的原意即是包装在网页内容之上的框）。浏览器中相关的功能仅仅在content API之上才有，而不存在于content API中。</p>
+<p><img src="http://my.csdn.net/uploads/201204/12/1334233807_5225.png" alt="image"></p>
+<h6 id="chromium官网上所宣称引入Content-API的两条原因："><a href="#chromium官网上所宣称引入Content-API的两条原因：" class="headerlink" title="chromium官网上所宣称引入Content API的两条原因："></a>chromium官网上所宣称引入Content API的两条原因：</h6><ul>
+<li>1）  让Chrome的开发者们摆脱content内部的复杂工作原理和机制；</li>
+<li>2）  给content和chrome划分清楚的界限来帮助开发者或者嵌入式的使用者们。<br><img src="http://my.csdn.net/uploads/201204/12/1334233812_9049.png" alt="image"><br>Content API包含哪些部分。</li>
+</ul>
+<p>功能分成六个部分：每个部分的接口一般也可以分成两类，第一类是嵌入者（embedder，这里可以是Chrome浏览器，CEF3和content shell）调用的接口，另一类是嵌入者实现的回调接口，被content API的内部实现所调用，例如参与实现的逻辑，事件的监听等。</p>
+<p>1）  App<br>这部分主要是跟应用程序或者进程的创建和初始化相关。<br>第一类，主要包括创建进程的初始化函数，content的初始化和关闭；<br>第二类，主要是实现回调函数，告诉嵌入者启动完成，进程启动，进程推出，沙盒模型初始化开始和结束等等。</p>
+<p>2）  Browser<br>第一类包括，对一些HTML5功能和其他一些高级功能实现的参与，例如resource，sensor，notification， speech recognition， web worker， download， web intents，等等;<br>第二类包括ContentBrowserClient，主要是实现部分逻辑，被Browser端（或者进程）调用，还有就是一些事件的回调函数.</p>
+<p>3）  Common: 主要定义一些公共的接口，被render和browser共享，例如一些进程相关，参数，gpu相关等等</p>
+<p>4）  Plugin: 仅有一个接口告诉嵌入者plugin进程被创建了</p>
+<p>5）  Render<br>第一类包含获取RenderThread的消息循环，注册v8 extension，计算JavaScript表达式等等<br>第二类包括ContentRendererClient，主要是实现部分逻辑，被Browser端（或者进程）调用，还有就是一些事件的回调函数</p>
+<h2 id="6）-Utility-工具类接口，主要包括让嵌入者参与content-API中的线程创建和消息的过滤。"><a href="#6）-Utility-工具类接口，主要包括让嵌入者参与content-API中的线程创建和消息的过滤。" class="headerlink" title="6）  Utility: 工具类接口，主要包括让嵌入者参与content API中的线程创建和消息的过滤。"></a>6）  Utility: 工具类接口，主要包括让嵌入者参与content API中的线程创建和消息的过滤。</h2><p><strong>地址栏里输入chrome://chrome-urls/：浏览器的丰富的信息</strong></p>
+<ol>
+<li><p>插件机制(NPAPI plugin)</p>
+<p> NPAPI提供两组接口，</p>
+</li>
+</ol>
+<ul>
+<li>一类以NPP打头，由插件来实现，被浏览器调用，主要包括一些插件创建，初始化，关闭，销毁，信息查询及事件处理，数据流，窗口设置，URL等；</li>
+<li>另一类以NPN打头，由浏览器来实现，被插件所调用，主要包括图形绘制，数据流处理，浏览器信息查询，内存分配和释放，浏览器的插件设置，URL等。</li>
+</ul>
+<ol>
+<li>renderer进程没有访问除I/O读写等之外的权限，因而插件需要有自己的进程<h5 id="chromium中插件的架构和进程模型，如下"><a href="#chromium中插件的架构和进程模型，如下" class="headerlink" title="chromium中插件的架构和进程模型，如下"></a>chromium中插件的架构和进程模型，如下</h5>每一种类型的plugin只有一个进程，这就是说，如果有两个或者多个renderer进程同时使用同一个插件，那么该插件会共享同一个进程</li>
+</ol>
+<p>plugin进程是由browser进程来负责创建和销毁，管理<br><img src="http://hi.csdn.net/attachment/201201/27/0_13276508715P2n.gif" alt="image"></p>
+<p>render和plugin一次请求和一次回调<br><img src="http://hi.csdn.net/attachment/201201/27/0_1327651017a2oQ.gif" alt="image"><br><img src="http://hi.csdn.net/attachment/201201/27/0_1327651076TbDb.gif" alt="image"></p>
+<h3 id="GPU加速（图形操作，处理）"><a href="#GPU加速（图形操作，处理）" class="headerlink" title="GPU加速（图形操作，处理）"></a>GPU加速（图形操作，处理）</h3><p>Chromium中，GPU加速可以不仅应用于3D，而且也可以应用于2D。这里，GPU加速通常包括以下几个部分：Canvas2D，布局合成（Layout Compositing）, CSS3转换（transitions），css3 3D变换（transforms），WebGL和视频(video)。</p>
+<p>地址栏里输入“about:gpu”，检查相关加速是否已经打开</p>
+<h6 id="进程模型"><a href="#进程模型" class="headerlink" title="进程模型"></a>进程模型</h6><p><img src="http://hi.csdn.net/attachment/201201/27/0_13276524962dkp.gif" alt="image"></p>
+<p>Chromium只会创建一个GPU进程，该进程被所有的Renderer进程和Pepper plugin进程所共享，但是GPU进程会为不同的进程创建不同的command buffer的示例</p>
+<p>GPU进程最终绘制的结果不再像软件渲染那样通过共享内存传递给Browser进程，而是直接将页面的内容绘制在浏览器的标签窗口内。</p>
+<p>chromium浏览器的进程模型<br><img src="http://my.csdn.net/uploads/201207/13/1342190712_9444.png" alt="image"></p>
+<p>chromium浏览器包括以下主要进程类型：</p>
+<ol>
+<li>Browser进程：浏览器的主进程，负责浏览器界面的显示，各个页面的管理，其他各种进程的管理；</li>
+<li>Render进程：页面的渲染进程，负责页面的渲染工作，WebKit的工作主要在这个进程中完成；</li>
+<li>NPAPI插件进程：每种类型的插件只会有一个进程，每个插件进程可以被多个Render进程共享；</li>
+<li>GPU进程：最多只有一个，当且仅当GPU硬件加速打开的时候才会被创建，主要用于对3D加速调用的实现；</li>
+<li>Pepper插件进程：同NPAPI插件进程，不同的是为Pepper插件而创建的进程<br>Chromium浏览器的进程模型，包括以下特征：</li>
+<li>browser进程和页面是分开的，这保证了页面的奔溃不会导致浏览器主界面的奔溃；</li>
+<li>每个页面是独立的进程，这保证了页面之间相互不影响；</li>
+<li>插件进程也是独立的，插件的问题不会影响浏览器主界面和页面；</li>
+<li>GPU硬件加速进程也是独立的。<h3 id="WebKit是一个渲染引擎，而不是一个浏览器"><a href="#WebKit是一个渲染引擎，而不是一个浏览器" class="headerlink" title="WebKit是一个渲染引擎，而不是一个浏览器"></a>WebKit是一个渲染引擎，而不是一个浏览器</h3><img src="http://hi.csdn.net/attachment/201202/24/0_13300912858vNG.gif" alt="image"><br>分层加速渲染<img src="http://hi.csdn.net/attachment/201202/24/0_1330092087337C.gif" alt="image"><br>合成架构chromium compositor（后面简称CC）合成的任务可以放在独立的线程中来做，而不仅仅是当前线程，该机制的好处是合成不会阻碍当前线程的响应，比较灵活。</li>
+</ol>
+<p>合成任务由CC来管理和执行的。首先，调用CC—Proxy，它主要做两件事，第一件，CCLayerTreeHost::updateLayers为合成做更新LayerChromium的准备工作，包括创建RenderSurface，设置绘制的区域，计算和设置需要更新的层。第二件，如果CCLayerImpl树来没有建立的话，那么就根据LayerChromium树来建立它。<br>再次，就是来绘制并合成相关的层，CCLayerTreeHostImpl::drawLayers基于CCLayerImpl树做绘制工作，把需要的绘制的所有层以此重新绘制并合成，该任务由LayerRenderChromium类负责处理完成（调用GPU Process来完成GL的绘制）。<br>最后，调用swapbuffers把命令发给GPU进程用来交换前后端buffer，完成了页面的显示。</p>
+<h2 id="Chromium的移动版-Chromium-for-Mobile"><a href="#Chromium的移动版-Chromium-for-Mobile" class="headerlink" title="Chromium的移动版 (Chromium for Mobile)"></a>Chromium的移动版 (Chromium for Mobile)</h2><h3 id="Chromium的多线程机制"><a href="#Chromium的多线程机制" class="headerlink" title="Chromium的多线程机制"></a>Chromium的多线程机制</h3><p><img src="http://img.my.csdn.net/uploads/201301/01/1357046355_6854.png" alt="image"><br>每个线程会有一个自己的MessageLoop，它们用来处理这些事件和任务。通常的MessageLoop只是处理事件，Chromium中的MessageLoop可以同时处理事件和任务。</p>
+<p>原理图<br><img src="http://img.my.csdn.net/uploads/201301/01/1357046401_4990.png" alt="image"></p>
+<ul>
+<li>chrome线程：进程的主线程，browser进程重要主要是负责UI，当然也是管家；Renderer进程中则是管家兼处理WebKit渲染的；gpu进程中则是负责处理处理绘图请求并调用openGL进行绘制工作的。</li>
+<li>Chrome_IOThread/Chrome_ChildIOThread线程：用来接受来自其它进程的IPC消息和派发自身消息到其它进程。</li>
+<li>SignalSender线程: V8 JavaScript引擎中用于处理linux信号的线程</li>
+<li>带回复的典型的任务传递过程。<br><img src="http://img.my.csdn.net/uploads/201301/01/1357046426_5987.png" alt="image"></li>
+</ul>
+<p>chromium支持Task所涉及的几个主要类。</p>
+<ul>
+<li>Callback: 回调类，其本质是封装了一个由调用者（例如线程A）设置的回调函数。包含一个run方法，当MessageLoop调度执行该Task时候，运行该方法，该方法调用回调函数</li>
+<li>Closure: 定义为Callback<void(void)></void(void)></li>
+<li>tracked_objects:一系列的类用于追踪Task生成位置，编译调试</li>
+<li>Task: 包含一个Closure，追踪信息，表示一个任务</li>
+</ul>
+<p>场景: browser进程接收到来自renderer进程的IPC消息，它由IO线程接收管理，然后派发给chrome线程处理，具体过程如下图<br><img src="http://img.my.csdn.net/uploads/201301/01/1357046452_8714.png" alt="image"></p>
+<h3 id="Chromium-消息循环-Message-Loop"><a href="#Chromium-消息循环-Message-Loop" class="headerlink" title="Chromium: 消息循环(Message Loop)"></a>Chromium: 消息循环(Message Loop)</h3><p>Chromium里，需要处理三种类型的消息：chromium自定义的任务，Socket或者文件等IO操作以及用户界面(UI)的消息</p>
+<h3 id="网页渲染的基本过程"><a href="#网页渲染的基本过程" class="headerlink" title="网页渲染的基本过程"></a>网页渲染的基本过程</h3><p><img src="http://img.blog.csdn.net/20130921092025218?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWlsYWRvX25qdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="image"></p>
+<h6 id="渲染引擎"><a href="#渲染引擎" class="headerlink" title="渲染引擎"></a>渲染引擎</h6><p><img src="http://img.blog.csdn.net/20130921092322593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWlsYWRvX25qdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="image"></p>
+<p>基本过程<br><img src="http://img.blog.csdn.net/20130921092344312?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWlsYWRvX25qdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="image"></p>
 
           
         
@@ -1155,7 +1395,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/22/理解安卓框架结构（一）/" itemprop="url">1</a></h1>
+                <a class="post-title-link" href="/2017/06/22/理解安卓框架结构（一）/" itemprop="url">理解安卓框架结构（一）</a></h1>
         
 
         <div class="post-meta">
@@ -1309,7 +1549,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
