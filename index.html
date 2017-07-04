@@ -253,6 +253,157 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/07/04/mysql数据和属性类型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/04/mysql数据和属性类型/" itemprop="url">数据库mysql</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-04T23:31:22+08:00">
+                2017-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="mysql的数据类型"><a href="#mysql的数据类型" class="headerlink" title="mysql的数据类型"></a>mysql的数据类型</h3><ul>
+<li><p>数值类型</p>
+<ul>
+<li>整数类型（6）<br>(INTEGER同INT)<br><img src="http://blog.anxpp.com/usr/uploads/2016/04/3058152425.png" alt="image">  </li>
+<li><p>定点数（2）</p>
+<p> salary DECIMAL(5,2)</p>
+<p> DECIMAL(M,D)，其中M表示十进制数字总的个数，D表示小数点后面数字的位数，上例中的取值范围为-999.99~999.99。</p>
+</li>
+</ul>
+</li>
+<li><p>M的取值范围为1~65，取0时会被设为默认值，超出范围会报错。</p>
+</li>
+<li><p>D的取值范围为0~30，而且必须&lt;=M，超出范围会报错。</p>
+<ul>
+<li>浮点数（3）</li>
+</ul>
+<p>浮点数是用来表示实数的一种方法，它用 M(尾数) * B( 基数)的E(指数）次方来表示实数，相对于定点数来说，在长度一定的情况下，具有表示数据范围大的特点。但同时也存在误差问题。</p>
+<p>如果希望保证值比较准确，推荐使用定点数数据类型。</p>
+<p>MySql中的浮点类型有float，double和real。他们定义方式为：FLOAT(M,D) 、 REAL(M,D) 、 DOUBLE PRECISION(M,D)。</p>
+<p>M取值范围为0~255。FLOAT只保证6位有效数字的准确性，所以FLOAT(M,D)中，M&lt;=6时，数字通常是准确的。如果M和D都有明确定义，其超出范围后的处理同decimal。</p>
+<p>D取值范围为0~30，同时必须&lt;=M。double只保证16位有效数字的准确性，所以DOUBLE(M,D)中，M&lt;=16时，数字通常是准确的。如果M和D都有明确定义，其超出范围后的处理同decimal。</p>
+<ul>
+<li>BIT（1）</li>
+</ul>
+<p>BIT数据类型可用来保存位字段值。BIT(M)类型允许存储M位值。M范围为1~64，默认为1。</p>
+</li>
+<li><p>字符串类型</p>
+<p> 字符串类型指CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET。</p>
+<p> 字符串类型(M)长度将不允许超过M所指定的长度<br> <img src="http://blog.anxpp.com/usr/uploads/2016/04/3986795825.png" alt="image"></p>
+<p> <img src="http://ke.dajiangtai.com/content/411/4.png?_=6534192" alt="image"></p>
+<p> ENUM是枚举类型</p>
+<p> SET是集合类型不同于ENUM类型，它是一个排列组合。假如有abc，它可以选择a或b或c，也有选择是ab,ac,bc，也可以选择abc。
+　　
+　　</p>
+</li>
+<li>时间日期类型</li>
+</ul>
+<p><img src="http://blog.anxpp.com/usr/uploads/2016/04/1173662722.png" alt="image"></p>
+<hr>
+<p><img src="http://orh2enexl.bkt.clouddn.com/mysql%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%B1%9E%E6%80%A7.png" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/IPC原理与安卓中的Binder（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1549,7 +1700,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
