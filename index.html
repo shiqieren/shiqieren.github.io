@@ -253,6 +253,204 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/07/04/数据库常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/04/数据库常用命令/" itemprop="url">数据库常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-04T23:31:22+08:00">
+                2017-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>create RUNOOB；创建数据库——drop RUNOOB；删除数据库——use RUNOOB;使用数据库</p>
+<h6 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h6><p>CREATE TABLE IF NOT EXISTS <code>runoob_tbl</code>(</p>
+<p>   <code>runoob_id</code> INT UNSIGNED AUTO_INCREMENT,</p>
+<p>   <code>runoob_title</code> VARCHAR(100) NOT NULL,</p>
+<p>   <code>runoob_author</code> VARCHAR(40) NOT NULL,</p>
+<p>   <code>submission_date</code> DATE,</p>
+<p>   PRIMARY KEY ( <code>runoob_id</code> )</p>
+<p>)ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<h6 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h6><p>DROP TABLE table_name ;</p>
+<h6 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h6><p>INSERT INTO table_name ( field1, field2,…fieldN )<br>                       VALUES<br>                       ( value1, value2,…valueN );</p>
+<h6 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h6><p>SELECT column_name,column_name<br>FROM table_name<br>[WHERE Clause]<br>[OFFSET M ][LIMIT N]    </p>
+<p>[WHERE condition1 [AND [OR]] condition2…..</p>
+<h6 id="UPDATE-查询"><a href="#UPDATE-查询" class="headerlink" title="UPDATE 查询"></a>UPDATE 查询</h6><p>修改或更新 MySQL 中的数据，我们可以使用 SQL UPDATE 命令来操作。</p>
+<h6 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h6><p>DELETE FROM table_name [WHERE Clause]</p>
+<h6 id="获取字段含有-“…”-字符的所有记录"><a href="#获取字段含有-“…”-字符的所有记录" class="headerlink" title="获取字段含有 “…” 字符的所有记录"></a>获取字段含有 “…” 字符的所有记录</h6><p>WHERE field1 LIKE condition1 [AND [OR]] filed2 = ‘somevalue’</p>
+<p>WHERE runoob_author LIKE ‘%COM’;</p>
+<h6 id="SELECT-语句的结果组合"><a href="#SELECT-语句的结果组合" class="headerlink" title="SELECT 语句的结果组合"></a>SELECT 语句的结果组合</h6><p>SELECT expression1, expression2, … expression_n<br>FROM tables<br>[WHERE conditions]</p>
+<p>UNION [ALL | DISTINCT]</p>
+<p>SELECT expression1, expression2, … expression_n<br>FROM tables<br>[WHERE conditions];</p>
+<h6 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h6><p>ASC 或 DESC 关键字来设置查询结果是按升序或降序排列</p>
+<p>SELECT field1, field2,…fieldN table_name1, table_name2…<br>ORDER BY field1, [field2…] [ASC [DESC]]</p>
+<h6 id="GROUP-BY-语句根据一个或多个列对结果集进行分组"><a href="#GROUP-BY-语句根据一个或多个列对结果集进行分组" class="headerlink" title="GROUP BY 语句根据一个或多个列对结果集进行分组"></a>GROUP BY 语句根据一个或多个列对结果集进行分组</h6><p>可以使用 COUNT, SUM, AVG,等函数</p>
+<p>SELECT column_name, function(column_name)<br>FROM table_name<br>WHERE column_name operator value<br>GROUP BY column_name;</p>
+<p>WITH ROLLUP 可以实现在分组统计数据基础上再进行相同的统计（SUM,AVG,COUNT…）。</p>
+<p>SELECT name, SUM(singin) as singin_count FROM  employee_tbl GROUP BY name WITH ROLLUP;</p>
+<h5 id="连接的使用"><a href="#连接的使用" class="headerlink" title="连接的使用"></a>连接的使用</h5><p>可以在 SELECT, UPDATE 和 DELETE 语句中使用 Mysql 的 JOIN 来联合多表查询</p>
+<p>JOIN 按照功能大致分为如下三类：</p>
+<ul>
+<li>INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记录。<br><img src="http://www.runoob.com/wp-content/uploads/2014/03/img_innerjoin.gif" alt="image"></li>
+</ul>
+<p>SELECT a.字段1, a.字段2, b.字段3 FROM 表1 a INNER JOIN 表2 b ON a.字段2 = b.字段2;<br>（联合表1和表2，从中获取所有当字段2相等时的对应的字段1,2,3表数据）。</p>
+<p>等价于<br>SELECT a.runoob_id, a.runoob_author, b.runoob_count FROM runoob_tbl a, tcount_tbl b WHERE a.runoob_author = b.runoob_author;</p>
+<ul>
+<li>LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记录。<br><img src="http://www.runoob.com/wp-content/uploads/2014/03/img_leftjoin.gif" alt="image"></li>
+</ul>
+<p>SELECT a.runoob_id, a.runoob_author, b.runoob_count FROM runoob_tbl a LEFT JOIN tcount_tbl b ON a.runoob_author = b.runoob_author;</p>
+<p>会读取左边的数据表的所有选取的字段数据,即使没有对应相等字段</p>
+<ul>
+<li><p>RIGHT JOIN（右连接）： 与 LEFT JOIN<br>相反，用于获取右表所有记录，即使左表没有对应匹配的记录。</p>
+<p><img src="http://www.runoob.com/wp-content/uploads/2014/03/img_rightjoin.gif" alt="image"></p>
+</li>
+</ul>
+<p>会读取右边的数据表的所有选取的字段数据,即使没有对应相等字段</p>
+<h6 id="NULL-值处理"><a href="#NULL-值处理" class="headerlink" title="NULL 值处理"></a>NULL 值处理</h6><p>WHERE runoob_count = NULL;或者WHERE runoob_count != NULL;不起作用</p>
+<p>必须使用 IS NULL 和 IS NOT NULL</p>
+<h6 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h6><p>WHERE name REGEXP ‘^[aeiou]|ok$’;</p>
+<h5 id="事务是必须满足4个条件（ACID）：-Atomicity（原子性）、Consistency（稳定性）、Isolation（隔离性）、Durability（可靠性）"><a href="#事务是必须满足4个条件（ACID）：-Atomicity（原子性）、Consistency（稳定性）、Isolation（隔离性）、Durability（可靠性）" class="headerlink" title="事务是必须满足4个条件（ACID）： Atomicity（原子性）、Consistency（稳定性）、Isolation（隔离性）、Durability（可靠性）"></a>事务是必须满足4个条件（ACID）： Atomicity（原子性）、Consistency（稳定性）、Isolation（隔离性）、Durability（可靠性）</h5><ul>
+<li>1、事务的原子性：一组事务，要么成功；要么撤回。</li>
+<li>2、稳定性 ：有非法数据（外键约束之类），事务撤回。</li>
+<li>3、隔离性：事务独立运行。一个事务处理后的结果，影响了其他事务，那么其他事务会撤回。事务的100%隔离，需要牺牲速度。</li>
+<li>4、可靠性：软、硬件崩溃后，InnoDB数据表驱动会利用日志文件重构修改。可靠性和高速度不可兼得， innodb_flush_log_at_trx_commit 选项 决定什么时候吧事务保存到日志里。</li>
+<li><h5 id="事物控制语句："><a href="#事物控制语句：" class="headerlink" title="事物控制语句："></a>事物控制语句：</h5></li>
+<li>BEGIN或START TRANSACTION；显示地开启一个事务；</li>
+<li>COMMIT；也可以使用COMMIT WORK，不过二者是等价的。COMMIT会提交事务，并使已对数据库进行的所有修改称为永久性的；</li>
+<li>ROLLBACK；有可以使用ROLLBACK WORK，不过二者是等价的。回滚会结束用户的事务，并撤销正在进行的所有未提交的修改；</li>
+<li>SAVEPOINT identifier；SAVEPOINT允许在事务中创建一个保存点，一个事务中可以有多个SAVEPOINT；</li>
+<li>RELEASE SAVEPOINT identifier；删除一个事务的保存点，当没有指定的保存点时，执行该语句会抛出一个异常；</li>
+<li>ROLLBACK TO identifier；把事务回滚到标记点；</li>
+<li>SET TRANSACTION；用来设置事务的隔离级别。InnoDB存储引擎提供事务的隔离级别有READ UNCOMMITTED、READ COMMITTED、REPEATABLE READ和SERIALIZABLE。<h6 id="MYSQL-事务处理主要有两种方法："><a href="#MYSQL-事务处理主要有两种方法：" class="headerlink" title="MYSQL 事务处理主要有两种方法："></a>MYSQL 事务处理主要有两种方法：</h6></li>
+<li>1、用 BEGIN, ROLLBACK, COMMIT来实现</li>
+<li><ul>
+<li>BEGIN 开始一个事务</li>
+</ul>
+</li>
+<li><ul>
+<li>ROLLBACK 事务回滚</li>
+</ul>
+</li>
+<li><ul>
+<li>COMMIT 事务确认</li>
+</ul>
+</li>
+<li>2、直接用 SET 来改变 MySQL 的自动提交模式:</li>
+<li><ul>
+<li>SET AUTOCOMMIT=0 禁止自动提交</li>
+</ul>
+</li>
+<li><ul>
+<li>SET AUTOCOMMIT=1 开启自动提交</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h5 id="修改数据表名或者修改数据表字段"><a href="#修改数据表名或者修改数据表字段" class="headerlink" title="修改数据表名或者修改数据表字段"></a>修改数据表名或者修改数据表字段</h5><p>ALTER TABLE testalter_tbl  DROP i;删除以上创建表的 i 字段<br>ALTER TABLE testalter_tbl ADD i INT;添加 i 字段，并定义数据类型:</p>
+<h5 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h5><p>使用ALTER 命令添加和删除索引</p>
+<p>ALTER mytable ADD INDEX [indexName] ON (username(length)) </p>
+<p>使用 ALTER 命令添加和删除主键</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/07/04/mysql数据和属性类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1518,146 +1716,13 @@ Chromium的线程消息发送可以通过以下三种接口实现:
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/22/理解安卓框架结构（一）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/22/理解安卓框架结构（一）/" itemprop="url">理解安卓框架结构（一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T23:31:22+08:00">
-                2017-06-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="安卓系统架构图"><a href="#安卓系统架构图" class="headerlink" title="　安卓系统架构图"></a>　安卓系统架构图</h3><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%9E%B6%E6%9E%84.png" alt="image"></p>
-<p>简易的一条请求，走过那些层级<br><img src="http://orh2enexl.bkt.clouddn.com/%E5%91%BD%E4%BB%A4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%B1%82.png" alt="image"></p>
-<h2 id="支撑起安卓3大-驱动-基石"><a href="#支撑起安卓3大-驱动-基石" class="headerlink" title="支撑起安卓3大==驱动====基石=="></a>支撑起安卓3大==驱动====基石==</h2><p>Loger（日志），Binder（IPC通信），Ashmem（匿名共享内存）</p>
-<h3 id="一图简易说明驱动原理与裁剪"><a href="#一图简易说明驱动原理与裁剪" class="headerlink" title="一图简易说明驱动原理与裁剪"></a>一图简易说明驱动原理与裁剪</h3><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%AE%89%E5%8D%93%E6%93%8D%E4%BD%9C%E5%BA%95%E5%B1%82%E9%A9%B1%E5%8A%A8%E5%8E%9F%E7%90%86.png" alt="image"></p>
-<p>安卓开发源码查看三大入手点</p>
-<ol>
-<li>HAL：硬件抽象层，底层交互</li>
-<li>Applicaticon componnet：四大组件，对应的进程，消息循环，安装</li>
-<li>UI:渲染流程图(4.2版本)</li>
-</ol>
-<p><img src="http://orh2enexl.bkt.clouddn.com/UI%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="image"></p>
-<h1 id="安卓运行环境"><a href="#安卓运行环境" class="headerlink" title="安卓运行环境"></a>安卓运行环境</h1><hr>
-<h5 id="什么是Dalvik："><a href="#什么是Dalvik：" class="headerlink" title="什么是Dalvik："></a>什么是Dalvik：</h5><blockquote>
-<p>Android平台的Java虚拟机。dex格式是专为Dalvik应用设计的一种压缩格式，适合于内存和处理器速度有限的系统。Dalvik允许同时运行多个虚拟机的实例，并且每一个应用作为独立的Linux进程执行。独立的进程可以防止在虚拟机崩溃的时候所有程序都被关闭。</p>
-</blockquote>
-<h5 id="什么是ART："><a href="#什么是ART：" class="headerlink" title="什么是ART："></a>什么是ART：</h5><blockquote>
-<p>在<strong>Dalvik下</strong>，应用==每次运行==的时候，字节码都需要通过即时编译器（just in time ，JIT）转换为机器码，这会拖慢应用的运行效率，而在<strong>ART</strong> 环境中，==第一次安装的时候==，字节码就会预先编译成机器码，使其成为真正的本地应用。这个过程叫做预编译（AOT,Ahead-Of-Time）。这样的话，应用的启动(首次)和执行都会变得更加快速。</p>
-</blockquote>
-<p>++ART优点++：<br>1、系统性能的显著提升。<br>2、应用启动更快、运行更快、体验更流畅、触感反馈更及时。<br>3、更长的电池续航能力。<br>4、支持更低的硬件。</p>
-<p>++ART缺点：++<br>1.机器码占用的存储空间更大，字节码变为机器码之后，可能会增加10%-20%（不过在应用包中，可执行的代码常常只是一部分。比如最新的 Google+ APK 是 28.3 MB，但是代码只有 6.9 MB。）<br>2.应用的安装时间会变长。</p>
-<h2 id="Dalvik（5-0以后ART）和JVM区别"><a href="#Dalvik（5-0以后ART）和JVM区别" class="headerlink" title="Dalvik（5.0以后ART）和JVM区别"></a>Dalvik（5.0以后ART）和JVM区别</h2><h3 id="主要区别："><a href="#主要区别：" class="headerlink" title="主要区别："></a>主要区别：</h3><p>==++1. Dalvik是基于寄存器的，而JVM是基于栈的。++==</p>
-<h6 id="二者区别如下图："><a href="#二者区别如下图：" class="headerlink" title="二者区别如下图："></a>二者区别如下图：</h6><p><img src="http://orh2enexl.bkt.clouddn.com/%E5%A0%86%E6%A0%88%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8%E6%8C%87%E4%BB%A4%E9%9B%86%E5%8C%BA%E5%88%AB.png" alt="image"></p>
-<p>==++2. ++Dalvik运行dex文件，而JVM运行java字节码,dex字节码更适合于内存和处理器速度有限的系统。++++==（寄存器指令集<br>需要多一层编码）</p>
-<p>==++3. 自Android 2.2开始，Dalvik支持JIT（just-in-time，即时编译技术）。++==</p>
-<p>运行环境执行过程　</p>
-<p>　当Android启动时，Dalvik VM 监视所有的程序（APK），并且创建依存关系树，为每个程序优化代码并存储在Dalvik缓存中。Dalvik第一次加载后会生成Cache文件，以提供下次快速加载，所以第一次会很慢。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1700,7 +1765,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
