@@ -253,6 +253,130 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/10/23/手机屏幕分辨率和密度/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shiqieren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="十且人的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/23/手机屏幕分辨率和密度/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T20:59:52+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://orh2enexl.bkt.clouddn.com/%E5%88%86%E8%BE%A8%E7%8E%87%E5%92%8C%E5%B1%8F%E5%B9%95%E5%AF%86%E5%BA%A6.png" alt="image"></p>
+<ol>
+<li>逻辑像素密度：是 rom 厂商设定的值，一般是取实际屏幕密度最接近的屏幕密度等级对应的值，但是也可以自主设定，通过系统 api，getResources().getDisplayMetrics().densityDpi 可以获取到该值</li>
+<li>像素：就是屏幕的实际像素单元个数</li>
+<li>尺寸：就是屏幕的实际尺寸大小</li>
+<li>逻辑尺寸：实际像素数＊160/逻辑像素密度，这也是 px 转 dp 的公式</li>
+<li>真实像素密度：利用勾股定理算对角线上像素数/对角线尺寸</li>
+<li>dp，dp 翻译过来叫做设备无关像素，对于真实像素密度等于像素密度等级上的逻辑值的设备，1dp = 1/160 inch，对于不等于逻辑值的设备，比如上述表格第二个设备，180.27 != 160 这个差值 android 操作系统会进行等比缩放来弥补。比如在这个设备上用的 160dp 到最后真正在屏幕上用多少个像素表示呢，这其实经过了 2 个步骤： </li>
+</ol>
+<ul>
+<li>dp 转程序中的 px，按照 dp 转 px 的公式，在该设备上 160dp=160px，160dp 和我们程序里面用 160px 完全等价</li>
+<li>程序中的 px 转显示屏上的 px，程序中160px 在该设备显示屏上用的是 180 px。160px -&gt; 180px 这个过程是android操作系统自动完成的，我们不需要关心</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/07/24/反编译apk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -927,118 +1051,6 @@
 <h5 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h5><p>使用ALTER 命令添加和删除索引</p>
 <p>ALTER mytable ADD INDEX [indexName] ON (username(length)) </p>
 <p>使用 ALTER 命令添加和删除主键</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://shiqieren.github.io/2017/06/25/资源管理器（五）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="shiqieren">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十且人的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/25/资源管理器（五）/" itemprop="url">资源管理器（五）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T23:31:22+08:00">
-                2017-06-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://orh2enexl.bkt.clouddn.com/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="image"></p>
 
           
         
@@ -1789,7 +1801,7 @@ Chromium的线程消息发送可以通过以下三种接口实现:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
